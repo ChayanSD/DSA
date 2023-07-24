@@ -11,6 +11,11 @@ public class MainMaxHeap {
        }
         System.out.println();
        heap.print();
+        System.out.print("Heap Sort : ");
+        while (!heap.isEmpty()){
+            System.out.print(heap.remove() +" ");
+            //This removing technique also known as Heap sort.
 
+        }
     }
 }
