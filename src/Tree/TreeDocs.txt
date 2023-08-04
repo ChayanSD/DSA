@@ -1,3 +1,4 @@
 Binary Tree :
 1s't and main element is called root.
 At most 2 child.
+Properties :
