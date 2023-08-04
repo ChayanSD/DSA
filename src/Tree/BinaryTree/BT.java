@@ -1,8 +1,5 @@
 package Tree.BinaryTree;
-
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 public class BT {
 
     static class Node{
@@ -90,7 +87,7 @@ public static void postOrder(Node root){
     BT tree = new BT();
     Node root = tree.build(nodes);
         System.out.println(root.data);
-//        preOrder(root);
+        preOrder(root);
         levelOrder(root);
     }
 }
