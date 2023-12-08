@@ -1,0 +1,31 @@
+package Tree.BinaryTree.Question;
+
+public class StringFormBT {
+    public static void main(String[] args) {
+
+    }
+    public static String tree2str(TreeNode root) {
+      StringBuilder res = new StringBuilder();
+      dfs(root, res);
+      return res.toString();
+    }
+
+    private static void dfs(TreeNode root, StringBuilder res) {
+        if (root == null) {
+            return;
+        }
+        res.append(root.val);
+        if (root.left == null && root.right == null) {
+            return;
+        }
+        res.append("(");
+        dfs(root.left, res);
+        res.append(")");
+        if (root.right != null) {
+            res.append("(");
+            dfs(root.right, res);
+            res.append(")");
+        }
+
+    }
+}
